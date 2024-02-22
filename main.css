@@ -1,3 +1,9 @@
 body{
     background-image: linear-gradient(to right, rgb(227, 70, 70),rgb(244, 185, 75),rgb(240, 240, 160),rgb(103, 207, 103),rgb(118, 118, 251),rgb(198, 95, 250),rgb(247, 115, 247)); 
+    color: #000000;
+    font-size: 1vw;
+}
+
+.beeg-header{
+    font-size: 10vw;
 }
