@@ -39,7 +39,8 @@ body {
 .img-box{
     border-radius: 3px;
     border: #e28df3;
-    width: 10%;
+    width: 20%;
+    height: 20%;
     display: inline;
 }
 .logo-box{
