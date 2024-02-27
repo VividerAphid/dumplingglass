@@ -63,8 +63,13 @@ body {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 8px;
+    padding: 14px 16px;
     text-decoration: none;
+  }
+  @media only screen and (max-width: 700px) {
+    .navbar a {
+      padding: 14px 4px;
+    }
   }
   
   .dropdown {
@@ -117,4 +122,8 @@ body {
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .select-pretty{
+    font-size: 1vw;
   }
