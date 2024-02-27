@@ -1,11 +1,7 @@
-.beeg-header{
-    font-size: 8vw;
-    text-align: center;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(227, 70, 70),rgb(244, 185, 75),rgb(240, 240, 160),rgb(103, 207, 103),rgb(118, 118, 251),rgb(198, 95, 250),rgb(247, 115, 247)); 
+    /* background-image: linear-gradient(to right, rgba(227, 70, 70, 0.636),rgba(244, 185, 75, 0.687),rgb(240, 240, 160),rgb(103, 207, 103),rgb(118, 118, 251),rgb(198, 95, 250),rgb(247, 115, 247));  */
+    background: #f5b0c1;
     color: #000000;
     font-size: 2vw;
     text-align: center;
@@ -21,16 +17,43 @@ body {
     }
   }
 
+.beeg-header{
+    font-size: 8vw;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+.rant-box{
+  width: 90%;
+  display:inline-block;
+}
+
+.about-team-box{
+  width:75%;
+  display:inline-block;
+}
+
 .img-box{
     border-radius: 3px;
-    border: #aaa;
+    border: #e28df3;
     width: 10%;
     display: inline;
+}
+.logo-box{
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 5px;
+  border-color: #e28df3;
+  width: 5%;
+  display: inline;
 }
   
   .navbar {
     overflow: hidden;
-    background-color: #aaa;
+    background-color: #e0708c;
   }
   
   .navbar a {
@@ -56,6 +79,12 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+  }
+
+  .title-bar {
+    /* background-image: linear-gradient(to right, rgb(227, 70, 70),rgb(244, 185, 75),rgb(240, 240, 160),rgb(103, 207, 103),rgb(118, 118, 251),rgb(198, 95, 250),rgb(247, 115, 247));  */
+      background-image: url("./img/Rainbow_background_for_website.jpg");
+      background-size: 100% 100%;
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
