@@ -14,8 +14,8 @@ body {
 .img-box{
     border-radius: 3px;
     border: #aaa;
-    width: 30%;
-    display: inline-block;
+    width: 10%;
+    display: inline;
 }
   
   .navbar {
