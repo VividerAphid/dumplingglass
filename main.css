@@ -48,6 +48,7 @@ body {
   border-width: 5px;
   border-color: #e28df3;
   width: 5%;
+  height: 5%;
   display: inline;
 }
   
@@ -88,7 +89,7 @@ body {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #0aa;
+    background-color: #c4274f;
   }
   
   .dropdown-content {
