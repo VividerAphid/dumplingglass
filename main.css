@@ -124,6 +124,9 @@ body {
     display: block;
   }
 
-  .select-pretty{
+  .contact-form{
+    font-size: 1.75vw;
+  }
+  .radio-pretty{
     font-size: 1vw;
   }
