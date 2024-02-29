@@ -42,6 +42,7 @@ body {
     width: 10%;
     height: 10%;
     display: inline;
+    margin: 3px;
 }
 .logo-box{
   border-style: solid;
