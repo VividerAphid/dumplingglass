@@ -36,14 +36,27 @@ body {
   display:inline-block;
 }
 
-.img-box{
+.img-tile-bordered{
     border-radius: 3px;
-    border: #e28df3;
+    border-width: 3px;
+    border-color: #131275;
     width: 10%;
     height: 10%;
     display: inline;
     margin: 3px;
 }
+
+.img-tile{
+    width: 10%;
+    height: 10%;
+    display: inline;
+    margin: 3px;
+}
+
+.img-holder{
+  display: none;
+}
+
 .logo-box{
   border-style: solid;
   border-radius: 30px;
