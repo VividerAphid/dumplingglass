@@ -4,12 +4,12 @@ function loadPics(){
         {src:"img/Finished wedding gift.png", width: 400, height: 400},
         {src:"img/Half Bath Transom w_light.png", width: 400, height: 400},
         {src:"img/Half Bath Transom.png", width: 400, height: 400},
-        {src:"img/Modern Transom .png", width: 400, height: 400},
+        {src:"img/Modern Transom .png", width: 400, height: 400, rotate: -90},
         {src:"img/Modern Transom in sunlight.png", width: 400, height: 400},
         {src:"img/Number piece closed door.png", width: 400, height: 400},
         {src:"img/Number piece open door and light.png", width: 400, height: 400},
-        {src:"img/Number piece in progress.png", width: 400, height: 400},
-        {src:"img/Number piece in progress pt 2.png", width: 400, height: 400},
+        {src:"img/Number piece in progress.png", width: 400, height: 400, rotate: -90},
+        {src:"img/Number piece in progress pt 2.png", width: 400, height: 400, rotate: -90},
         {src:"img/Triplets .png", width: 400, height: 400},
         {src:"img/Triplets with light.png", width: 400, height: 400},
     ];
@@ -34,6 +34,11 @@ function loadPics(){
         picc.height = picList[r].height;
         picc.src = picList[r].src;
         picDiv.className = "img-box";
+        picc.alt = altList[0];
+        if(picList[r].rotate){
+            console.log("rotate detect!");
+            picc.style.transform = `rotate(${picList[r].rotate}deg)`;
+        }
     }
 
 }
