@@ -1,4 +1,4 @@
-function loadPics(){
+function loadPicElements(){
     let picList = [
         {src:"img/Cabinet accent.png", width: 400, height: 400},
         {src:"img/Finished wedding gift.png", width: 400, height: 400},
@@ -26,25 +26,40 @@ function loadPics(){
     //class='img-box'
 
     let holder = document.getElementById("picHolder");
+    let imgList = [];
     
     for(let r = 0; r < picList.length; r++){
-        let picDiv = addElement("picDiv"+r, "div", holder);
-        let picc = addElement("pic"+r, "img", picDiv);
+        let picc = addElement("pic"+r, "img", holder);
         picc.width = picList[r].width;
         picc.height = picList[r].height;
         picc.src = picList[r].src;
-        picDiv.className = "img-box";
+        picc.className = "img-holder";
         picc.alt = altList[0];
         if(picList[r].rotate){
-            console.log("rotate detect!");
             picc.style.transform = `rotate(${picList[r].rotate}deg)`;
         }
+        imgList.push(picc);
     }
+
+    return imgList;
 
 }
 
-function toggleEnlarge(){
+function loadTileElements(tileSize, imgs){
+    let holder = document.getElementById("tileHolder");
+    for(let r = 0; r < imgs.length; r++){
+        let can = addElement("can"+r, "canvas", holder);
+        let ctx = can.getContext('2d');
+        let img = document.getElementById("pic"+r);
+        can.width = tileSize;
+        can.height = tileSize;
+        ctx.drawImage(img, 0, 0, tileSize, tileSize);
+        can.className = "img-tile";
+    }
+}
 
+function toggleEnlarge(){
+    
 }
 
 function addElement(id, type, parent, innards){
