@@ -29,11 +29,12 @@ function loadPicElements(){
     let imgList = [];
     
     for(let r = 0; r < picList.length; r++){
-        let picc = addElement("pic"+r, "img", holder);
+        let picDiv = addElement("picDiv"+r, "div", holder);
+        let picc = addElement("pic"+r, "img", picDiv);
         picc.width = picList[r].width;
         picc.height = picList[r].height;
         picc.src = picList[r].src;
-        picc.className = "img-holder";
+        picDiv.className = "img-tile-bordered";
         picc.alt = altList[0];
         if(picList[r].rotate){
             picc.style.transform = `rotate(${picList[r].rotate}deg)`;
@@ -41,21 +42,6 @@ function loadPicElements(){
         imgList.push(picc);
     }
 
-    return imgList;
-
-}
-
-function loadTileElements(tileSize, imgs){
-    let holder = document.getElementById("tileHolder");
-    for(let r = 0; r < imgs.length; r++){
-        let can = addElement("can"+r, "canvas", holder);
-        let ctx = can.getContext('2d');
-        let img = document.getElementById("pic"+r);
-        can.width = tileSize;
-        can.height = tileSize;
-        ctx.drawImage(img, 0, 0, tileSize, tileSize);
-        can.className = "img-tile";
-    }
 }
 
 function toggleEnlarge(){

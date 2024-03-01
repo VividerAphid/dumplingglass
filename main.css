@@ -38,7 +38,7 @@ body {
 
 .img-tile-bordered{
     border-radius: 3px;
-    border-width: 3px;
+    border-width: 5px;
     border-color: #131275;
     width: 10%;
     height: 10%;
@@ -47,10 +47,20 @@ body {
 }
 
 .img-tile{
-    width: 10%;
-    height: 10%;
+    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    height: 100px;
     display: inline;
     margin: 3px;
+    overflow: hidden;
+}
+
+img{
+  overflow:hidden;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: #ff0000;
 }
 
 .img-holder{
